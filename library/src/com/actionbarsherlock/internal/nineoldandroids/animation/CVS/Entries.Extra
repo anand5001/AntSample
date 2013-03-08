@@ -1,0 +1,13 @@
+/Animator.java////*////
+/AnimatorListenerAdapter.java////*////
+/AnimatorSet.java////*////
+/FloatEvaluator.java////*////
+/FloatKeyframeSet.java////*////
+/IntEvaluator.java////*////
+/IntKeyframeSet.java////*////
+/Keyframe.java////*////
+/KeyframeSet.java////*////
+/ObjectAnimator.java////*////
+/PropertyValuesHolder.java////*////
+/TypeEvaluator.java////*////
+/ValueAnimator.java////*////
