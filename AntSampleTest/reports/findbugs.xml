@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="0" timestamp="1362669104075" analysisTimestamp="1362669104135" release="">
+  <Project projectName="">
+    <Jar>D:\TrimbleProj\Session\AntSampleTest\bin</Jar>
+    <AuxClasspathEntry>D:\TrimbleProj\Session\AntSampleTest\${android.jar}</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.example.antsample.test.R$attr">
+      <SourceLine classname="com.example.antsample.test.R$attr" start="11" end="11" sourcefile="R.java" sourcepath="com/example/antsample/test/R.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.example.antsample.test.R$drawable">
+      <SourceLine classname="com.example.antsample.test.R$drawable" start="13" end="13" sourcefile="R.java" sourcepath="com/example/antsample/test/R.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.example.antsample.test.R$string">
+      <SourceLine classname="com.example.antsample.test.R$string" start="16" end="16" sourcefile="R.java" sourcepath="com/example/antsample/test/R.java"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="1" missingClasses="1">
+    <Error>
+      <ErrorMessage>Cannot open codebase filesystem:D:\TrimbleProj\Session\AntSampleTest\${android.jar}</ErrorMessage>
+      <Exception>java.io.FileNotFoundException: File D:\TrimbleProj\Session\AntSampleTest\${android.jar} doesn&apos;t exist</Exception>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ClassFactory.createFilesystemCodeBase(ClassFactory.java:107)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.FilesystemCodeBaseLocator.openCodeBase(FilesystemCodeBaseLocator.java:75)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ClassPathBuilder.processWorkList(ClassPathBuilder.java:596)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ClassPathBuilder.build(ClassPathBuilder.java:220)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.buildClassPath(FindBugs2.java:779)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:217)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:391)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1298)</StackTrace>
+    </Error>
+    <MissingClass>android.test.ActivityInstrumentationTestCase2</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Thu, 7 Mar 2013 20:41:44 +0530" total_classes="6" referenced_classes="15" total_bugs="3" total_size="26" num_packages="1" vm_version="20.8-b03" cpu_seconds="3.87" clock_seconds="2.03" peak_mbytes="59.69" alloc_mbytes="1795.56" gc_seconds="0.02" priority_2="3">
+    <PackageStats package="com.example.antsample.test" total_bugs="3" total_types="6" total_size="26" priority_2="3">
+      <ClassStats class="com.example.antsample.test.BuildConfig" sourceFile="BuildConfig.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.example.antsample.test.MyAppActivityTest" sourceFile="MyAppActivityTest.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.example.antsample.test.R" sourceFile="R.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.example.antsample.test.R$attr" sourceFile="R.java" interface="false" size="3" bugs="1" priority_2="1"/>
+      <ClassStats class="com.example.antsample.test.R$drawable" sourceFile="R.java" interface="false" size="4" bugs="1" priority_2="1"/>
+      <ClassStats class="com.example.antsample.test.R$string" sourceFile="R.java" interface="false" size="4" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="207" invocations="294" avgMicrosecondsPerInvocation="704" maxMicrosecondsPerInvocation="45073" standardDeviationMircosecondsPerInvocation="2878"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="103" invocations="298" avgMicrosecondsPerInvocation="347" maxMicrosecondsPerInvocation="26543" standardDeviationMircosecondsPerInvocation="1706"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="91" invocations="15" avgMicrosecondsPerInvocation="6127" maxMicrosecondsPerInvocation="28113" standardDeviationMircosecondsPerInvocation="9506"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="77" invocations="15" avgMicrosecondsPerInvocation="5171" maxMicrosecondsPerInvocation="61314" standardDeviationMircosecondsPerInvocation="15145"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="75" invocations="21" avgMicrosecondsPerInvocation="3573" maxMicrosecondsPerInvocation="61234" standardDeviationMircosecondsPerInvocation="12975"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="65" invocations="15" avgMicrosecondsPerInvocation="4378" maxMicrosecondsPerInvocation="35716" standardDeviationMircosecondsPerInvocation="8963"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="47" invocations="55" avgMicrosecondsPerInvocation="856" maxMicrosecondsPerInvocation="15948" standardDeviationMircosecondsPerInvocation="2227"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="43" invocations="253" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="2036" standardDeviationMircosecondsPerInvocation="330"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="42" invocations="7" avgMicrosecondsPerInvocation="6081" maxMicrosecondsPerInvocation="41880" standardDeviationMircosecondsPerInvocation="14615"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="26" invocations="7" avgMicrosecondsPerInvocation="3812" maxMicrosecondsPerInvocation="25182" standardDeviationMircosecondsPerInvocation="8724"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
